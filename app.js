@@ -1,7 +1,7 @@
 /** Use a matrix to select the winner where the row represents the computer's choice
  * and the column reprsents the player choice.
  */
-var matrix = [["Tie", "Computer", "Player"],
+const matrix = [["Tie", "Computer", "Player"],
             ["Player", "Tie", "Computer"],
             ["Computer", "Player", "Tie"]
 ];
