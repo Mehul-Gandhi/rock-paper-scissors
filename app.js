@@ -75,6 +75,8 @@ document.getElementById("start-game").addEventListener("click", () => {
         hidden = true;
         playerWins = 0;
         computerWins = 0;
+        document.getElementById("opp-score").innerHTML = 0;
+        document.getElementById("p-score").innerHTML = 0;
         document.getElementById('start-game').style.visibility = 'hidden';
     }
 }
@@ -90,22 +92,23 @@ document.getElementById("scissors").addEventListener("click", async () => main(2
  *  the game finishes and the score is set back to 0 for both players. The start button
  *  appears again. */
 async function main(playerChoice) {
+    var result;
     if (hidden && playerWins != 5 && computerWins != 5) {
     let computerChoice = getComputerChoice();
-    alert(playRound(playerChoice, computerChoice));
+    result = playRound(playerChoice, computerChoice);
+    document.getElementById("result-score").innerHTML = result;
     } 
     await delay(2000);
     if (playerWins == 5 || computerWins == 5) {
         if (playerWins == 5) {
-            alert(`Player wins!`);
+            result = `Player wins!`;
         } else {
-            alert(`Computer Wins!`);
+            result = `Computer Wins!`;
         }
+        document.getElementById("result-score").innerHTML = result;
         hidden = false;
         document.getElementById('start-game').style.visibility = 'visible';
         playerWins = 0;
         computerWins = 0;
-        document.getElementById("opp-score").innerHTML = 0;
-        document.getElementById("p-score").innerHTML = 0;
     }
 }
