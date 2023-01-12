@@ -1,0 +1,62 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightblue;
+    color: green;
+}
+.buttons {
+    display: flex;
+    background-color: lightblue;
+    justify-content: space-around;
+    flex: 1;
+    padding: 10px;
+}
+
+img {
+    width: 350px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.containers {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    margin: 100px;
+    margin-top: 150px;
+    margin-bottom: 0px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    border: solid lightgoldenrodyellow;
+    text-align: center;
+    padding: 0px;
+    flex: 1 0 auto;
+}
+.player {
+    font-size: 28px;
+    color: darkblue;
+}
+.score {
+    font-size: 34px;
+    color: green;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+button {
+    font-size: 24px;
+    border: solid lightgoldenrodyellow;
+    padding: 20px;
+    background-color: lightgoldenrodyellow
+}
