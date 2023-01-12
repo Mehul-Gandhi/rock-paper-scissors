@@ -9,6 +9,8 @@
     justify-content: space-around;
     flex: 1;
     padding: 10px;
+    flex: 1;
+    flex-wrap: wrap;
 }
 
 img {
@@ -29,6 +31,8 @@ h1 {
     margin: 100px;
     margin-top: 150px;
     margin-bottom: 0px;
+    flex-wrap: wrap;
+
 }
 .container {
     display: flex;
